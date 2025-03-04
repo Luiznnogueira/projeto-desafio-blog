@@ -1,0 +1,135 @@
+html {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.title {
+    background: #02A28F;
+    width: 80%;
+    height: 4.5rem;
+    padding: 0.5rem 10rem;
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: 700;
+    margin: 0;
+}
+
+.corpo {
+    height: 27.5rem;
+    top: 1rem;
+    margin-left: 6.5rem;
+    border-radius: 10px;
+    padding: 2rem 2rem 0rem;
+    display: flex;
+}
+
+.segundo {
+    margin-left: 8.5rem;
+    border-radius: 10px;
+    padding: 1rem 1rem 0rem;
+}
+
+.segundoimg {
+    display: flex;
+    margin-left: 8.5rem;
+}
+
+#teste {
+    display: grid;
+}
+
+.barrafim {
+    background: #02A28F;
+    width: 80%;
+    height: 4.5rem;
+    text-align: center;
+    padding: 0.5rem 10rem;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+/* Responsividade para telas pequenas (320px) */
+@media only screen and (max-width: 320px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        padding: 0.8rem;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .corpo {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .corpo img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .segundo {
+        max-width: .5rem;
+        height: 3rem;
+        padding: 1rem 0;
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    .segundoimg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .segundoimg img {
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #teste {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    /* Movendo #teste para o final no mobile */
+    .corpo, .segundo, .segundoimg, .barrafim {
+        order: 0;
+    }
+
+    #teste {
+        order: 1;
+    }
+
+    .barrafim {
+        width: 100%;
+        padding: 0.8rem;
+    }
+}
+
