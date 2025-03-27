@@ -1,0 +1,309 @@
+html {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #dedcdc;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+h2 {
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+.title {
+    background: #02A28F;
+    width: 75rem;
+    height: 2.7rem;
+    gap: 1rem;
+    padding: 1rem 9.75rem 1rem 9.75rem;
+}
+
+.corpo {
+    height: 27.5rem;
+    top: 1rem;
+    margin-left: 6.5rem;
+    border-radius: 10px;
+    padding: 2rem 2rem 0rem;
+    display: flex;
+}
+
+#postpopular {
+    width: 20.5rem;
+    height: 1rem;
+    border-radius: 10px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    gap: 10px;
+    background: #02A28F;
+    margin-top: 0.6rem;
+}
+
+
+.cardd {
+    width: 22rem;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra maior para melhor separação */
+    padding: .8rem;
+}
+
+.textocompleto {
+    margin-left: 1rem;
+}
+
+.texto1 {
+    margin: 0;
+}
+
+.texto2 {
+    margin-top: 0.5rem;
+    color: #616161;
+    font-size: 0.75rem;
+}
+
+#categorias {
+    width: 20.5rem;
+    height: 1rem;
+    border-radius: 10px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    gap: 10px;
+    background: #02A28F;
+    margin-top: 2.3rem;
+    align-items: center;
+}
+
+.lista {
+    justify-content: space-between;
+    color: #616161;
+    margin-top: 1.5rem;
+    margin-left: -1rem;
+}
+
+#segundo {
+    width: 43.5rem;
+    height: 1.5rem;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    color: aliceblue;
+    background: #02A28F;
+    margin-left: 9.7rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#segundo p {
+    text-decoration: underline;
+    font-size: .9rem;
+}
+
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Garante colunas uniformes */
+    gap: 1rem; /* Garante espaço maior entre os cartões */
+    max-width: 50rem; /* Ajusta melhor a largura do container */
+    margin: 1rem auto; /* Centraliza na tela */
+    padding: .5rem ;
+    margin-left: 9rem;
+}
+
+.postcard {
+    width: 87%; /* Ajusta a largura para caber na coluna */
+    max-width: 22rem; /* Define um tamanho máximo */
+    height: auto; /* Ajusta altura automaticamente */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra maior para melhor separação */
+}
+
+.postcard img {
+    width: 100%; /* Ajusta a largura para caber na coluna */
+}
+
+
+.primeiro {
+    color: #02A28F;
+    margin: .5rem;
+}
+
+.quartoh3 {
+    margin: .5rem;
+    
+}
+
+.segundo {
+    color: #616161;
+    margin: .5rem;
+}
+
+.terceiro {
+    font-size: 0.9rem;
+    margin: .5rem;
+}
+
+.ultimo {
+    color: #616161;
+    margin: .5rem;
+}
+
+.barrafim p {
+    background: #02A28F;
+    width: 75rem;
+    height: 2rem;
+    text-align: center;
+    padding: 1rem 10rem;
+    color: aliceblue;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 14px;
+        background-color: #dedcdc;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    /* Ajustando o título para cobrir toda a largura */
+    .title {
+        width: 100%;
+        height: auto;
+        padding: 1rem 4.7rem;
+        text-align: center;
+        background-size: cover; /* Garante que a cor cubra toda a área */
+        background-position: center;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* Ajustando o corpo para ocupar toda a tela */
+    .corpo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 92%;
+        padding: 1rem;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Garantindo que a imagem ocupe toda a largura do mobile */
+    .corpo img {
+        width: 100%; 
+        max-width: 22.6rem;
+        height: auto; /* Mantém a proporção da imagem */
+        max-height: 20rem; /* Limita a altura para não ultrapassar a tela */
+    }
+
+    .cardd {
+        align-items: center;
+        margin-left: .7rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        
+    }
+
+    .cardd img {
+        width: 100%;
+    }
+
+    .textocompleto {
+        margin-left: 1rem;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .postcard {
+        width: 90%;
+        max-width: 20rem;
+        margin-left: -20rem;
+    }
+
+    #segundo {
+        width: 82%;
+        height: auto;
+        text-align: center;
+        background-size: cover; /* Garante que a cor cubra toda a área */
+        background-position: center;
+        padding: 0rem 1rem;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin: 0 auto;
+    }
+
+    #postpopular{
+        width: 88%;
+        height: auto;
+        text-align: center;
+        background-size: cover; /* Garante que a cor cubra toda a área */
+        background-position: center;
+        margin: 0 auto;
+        box-sizing: border-box;
+   
+    }
+
+    #categorias {
+        width: 88%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1rem 1rem 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 11rem;
+    }
+
+    .lista {
+        text-align: left;  
+        justify-content: space-between;
+    }
+
+    .barrafim p {
+        width: 100%;
+        height: auto;
+        padding: .5rem 4.7rem;
+        text-align: center;
+        background-size: cover; /* Garante que a cor cubra toda a área */
+        background-position: center;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
